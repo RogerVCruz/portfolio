@@ -69,8 +69,6 @@ color: var(--black-800);: Define a cor do texto como preto escuro.
     align-items: center;
 }
 
-
-
 /* .botao:
 padding: 12px 32px;: Espaçamento interno do botão.
 border: 1px solid var(--purple-800);: Define uma borda roxa escura.
@@ -260,12 +258,16 @@ justify-content: space-evenly;: Distribui o conteúdo de forma igual dentro do c
 #sobre_texto:
 margin-left: 30px;: Adiciona margem à esquerda do texto, afastando-o de outros elementos. */
 
+
+
+/* ESTILIZAÇÃO DA SEÇÃO CONTATO */
+
 .contato_container {
     max-width: 1120px;
     margin: auto;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 530px);
+    grid-template-columns: repeat(auto-fill, 540px);
     align-items: center;
     gap: 30px;
 }
@@ -282,27 +284,30 @@ h4 {
     font-weight: bold;
 }
 
-.social_container a img {
-    width: 70px;
+/* ESTILIZAÇÃO DA SEÇÃO REDES SOCIAIS */
+
+.social_container a img{
+     width: 70px;
 }
 
 .social_icon:hover {
-    filter: 
-    brightness(0) 
-    saturate(100%) 
-    invert(24%) 
-    sepia(37%) 
-    saturate(4515%) 
-    hue-rotate(250deg) 
-    brightness(91%) 
-    contrast(91%);
+   filter:  
+   brightness(0) 
+   saturate(100%) 
+   invert(28%) 
+   sepia(26%) 
+   saturate(4087%) 
+   hue-rotate(242deg) 
+   brightness(94%) 
+   contrast(103%)
+   ;
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    margin: 64px 0px 0px 0px;
-    padding: 24px;
+   display: flex; 
+   flex-direction: column;
+   margin: 70px 0px 0px 0px;
+   padding: 24px;
 }
 
 form label{
