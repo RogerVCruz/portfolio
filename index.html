@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projeto Portfólio" />
@@ -31,8 +39,8 @@
     </header>
 
     <main>
-      <section id="home " class="home_container">
-        <article id="home_texto " class="home_content">
+      <section id="home" class="home_container">
+        <article id="home_texto" class="home_content">
           <h4>Bem-vindo ao Novo Universo</h4>
           <h1>Mundos diferentes para pessoas diferentes</h1>
           <p>
@@ -43,7 +51,7 @@
           <a
             class="botao"
             target="_blank"
-            href="https://github.com/conteudoGeneration"
+            href="https://github.com/rogervcruz"
             alt="Github de Roger Seixas"
           >
             Explorar
@@ -52,44 +60,18 @@
 
         <article id="home_imagem" class="home_content">
           <img
+            class="home_content_img"
             src="./assets/img/astronauta.svg"
             alt="Capacete de Astronauta Animado"
           />
         </article>
       </section>
 
-      <section id="about" class="sobre_container">
-        <img
-          src="assets/img/user_01.svg"
-          alt="Foto do Perfil do Github"
-          width="450px"
-        />
-
-        <article id="sobre_texto">
-          <h1>Sobre mim</h1>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-            odit voluptates incidunt inventore rem error harum blanditiis
-            accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-            deleniti modi sit laudantium totam!
-          </p>
-
-          <div id="sobre_github" class="flex sobre_github">
-            <a
-              class="botao"
-              target="_blank"
-              href="https://github.com/conteudoGeneration"
-              >Github</a
-            >
-            <p>200 Seguidores</p>
-            <p>100 Repositórios</p>
-          </div>
-        </article>
-      </section>
+      <section id="about" class="sobre_container"></section>
 
       <section id="contact" class="contato_container">
-        <article id="redes_sociais" class="flex contato_content">
+        <!-- Seção de Contato - Redes Sociais-->
+        <article id="redes_sociais" class="contato_content">
           <h4>Contate-me</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error
@@ -97,14 +79,14 @@
           </p>
 
           <div id="icones_redes_sociais" class="flex social_container">
-            <a href="">
+            <a href="https://www.linkedin.com/in/roger-seixas/">
               <img
                 class="social_icon"
                 src="assets/img/linkedin.svg"
                 alt="LinkedIn"
               />
             </a>
-            <a href="">
+            <a href="https://github.com/rogervcruz">
               <img
                 class="social_icon"
                 src="assets/img/github.svg"
@@ -121,8 +103,19 @@
           </div>
         </article>
 
-        <form action="" method="POST">
-          <label for="name">Nome: </label>
+        <form
+          id="formulario"
+          action="https://formsubmit.co/rogervtsc@hotmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://rogervcruz.github.io/portfolio/sucess.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="nome">Nome: </label>
           <input
             id="name"
             type="text"
@@ -131,7 +124,7 @@
           />
           <span id="txtNome"></span>
 
-          <label for="email">E-mail: </label>
+          <label for="email">Email: </label>
           <input
             id="email"
             type="text"
@@ -145,7 +138,7 @@
             id="subject"
             type="text"
             name="subject"
-            placeholder="Digite o título da message"
+            placeholder="Digite o título da mensagem"
           />
           <span id="txtSubject"></span>
 
@@ -153,14 +146,17 @@
           <textarea
             id="message"
             name="message"
-            placeholder="Digite sua message"
+            placeholder="Digite sua mensagem"
           ></textarea>
+          <span id="txtMensagem"></span>
 
           <button class="botao" type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
-    <footer>Feito com 🧡 por Generation Brasil - 2024</footer>
+    <footer class="flex">Feito com 🧡 por Generation Brasil - 2024</footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
